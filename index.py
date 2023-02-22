@@ -1,8 +1,10 @@
 import streamlit as st
 
 # 创建导航菜单
+
 menu = ['Home', 'Page 1', 'Page 2', 'Page 3']
-choice = st.sidebar.text_input('Select Page', menu)
+choice = st.sidebar.text("Select Page", menu)
+
 
 # 显示页面内容
 if choice == 'Home':
