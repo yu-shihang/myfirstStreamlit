@@ -1,8 +1,12 @@
 import streamlit as st
 
+# 设置页面配置
+st.set_page_config(page_title="My App", page_icon=":smiley:", layout="wide", 
+                   initial_sidebar_state="expanded", background_color="#FFFFFF")
+
 # 创建导航菜单
 menu = ['Home', 'Page 1', 'Page 2', 'Page 3']
-choice = st.sidebar.radio("Select Page", menu)
+choice = st.sidebar.selectbox('Select Page', menu)
 
 # 显示页面内容
 if choice == 'Home':
